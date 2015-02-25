@@ -5,7 +5,6 @@
 
     "minimum-stability": "dev",
     "require": {
-        "drupal/drupal": "~7.28",
         "drush/drush": "6.*"
 
     },
