@@ -24,6 +24,11 @@ if [[ -d www ]]; then
   chmod -R +w www/sites/default
 fi
 
+# Poor mans way of using winmillwill/settings_compile
+if [[ -f bin/cnf/settings.php ]]; then
+  ln -s $base/bin/cnf/settings.php $base/www/sites/default
+fi
+
 # Adds any custom code to the Drupal install.
 if [[ -d modules/custom ]]; then
   if [[ -d $base/www/sites/all/modules/custom ]]; then

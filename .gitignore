@@ -1,8 +1,10 @@
 # Ignore composer downloads
 vendor
 bin/*
-!bin/drupal_init
 www/*
+
+!bin/drupal_init
+!bin/cnf
 
 # Ignore Vagrant box
 .vagrant/
