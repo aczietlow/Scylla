@@ -1,17 +1,7 @@
-cnf/config.yml
-cnf/settings.php
-files
-!files/private
 www
 vendor
 .env
 bin/*
-!bin/wrapper
-!bin/gateway_wrapper
-!bin/libraries
-
-# Ignore database artifacts
-*.sql*
 
 # Ignore Vagrant box
 .vagrant/
