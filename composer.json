@@ -1,20 +1,29 @@
 {
-    "name": "zietlow/scylla",
-    "license": "GPLv2",
-    "description": "Playground for better understanding the 'dragons' hiding under the water and how to test for them.",
+  "name": "zietlow/scylla",
+  "license": "GPLv2",
+  "description": "Playground for better understanding the 'dragons' hiding under the water and how to test for them.",
 
-    "minimum-stability": "dev",
-    "require": {
-        "drush/drush": "6.*"
+  "minimum-stability": "dev",
+  "require": {
+    "drush/drush": "6.*"
 
-    },
-    "require-dev": {
-        "behat/behat": "3.0.*@dev",
-        "drupal/drupal-extension": "3.0.*@dev"
-    },
-    "config": {
-        "bin-dir": "bin",
-        "process-timeout": 1200
-    },
-    "type": "project"
+  },
+  "require-dev": {
+    "behat/behat": "3.0.*@dev",
+    "drupal/drupal-extension": "3.0.*@dev"
+  },
+  "config": {
+    "bin-dir": "bin",
+    "process-timeout": 1200
+  },
+  "scripts": {
+    "scripts": {
+      "post-install-cmd": [
+        "bin/drupal_init"
+      ],
+      "post-update-cmd": [
+        "bin/drupal_init"
+      ]
+    }
+  },
 }
