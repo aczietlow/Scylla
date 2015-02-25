@@ -17,13 +17,11 @@
     "process-timeout": 1200
   },
   "scripts": {
-    "scripts": {
-      "post-install-cmd": [
-        "bin/drupal_init"
-      ],
-      "post-update-cmd": [
-        "bin/drupal_init"
-      ]
-    }
+    "post-install-cmd": [
+      "bin/drupal_init"
+    ],
+    "post-update-cmd": [
+      "bin/drupal_init"
+    ]
   }
 }
