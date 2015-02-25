@@ -2,6 +2,7 @@
 vendor
 bin/*
 !bin/drupal_init
+www/*
 
 # Ignore Vagrant box
 .vagrant/
