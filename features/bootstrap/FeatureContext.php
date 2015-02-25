@@ -8,7 +8,8 @@ use Behat\Gherkin\Node\TableNode;
 /**
  * Defines application features from the specific context.
  */
-class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext {
+class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext
+{
 
   /**
    * Initializes context.
@@ -17,7 +18,9 @@ class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext
    * You can also pass arbitrary arguments to the
    * context constructor through behat.yml.
    */
-  public function __construct() {
+  public function __construct()
+  {
+
   }
 
 }
