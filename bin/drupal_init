@@ -24,6 +24,10 @@ if [[ -d www ]]; then
   chmod -R +w www/sites/default
 fi
 
+if [[ -f $base/www/sites/default/settings.php ]]; then
+  rm $base/www/sites/default/settings.php
+fi
+
 # Poor mans way of using winmillwill/settings_compile
 if [[ -f bin/cnf/settings.php ]]; then
   ln -s $base/bin/cnf/settings.php $base/www/sites/default
