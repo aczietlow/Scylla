@@ -24,10 +24,19 @@ class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext
     }
 
     /**
+     * @When I visit the login page
+     */
+    public function iAmOnThe()
+    {
+        $this->getSession()->visit('user');
+    }
+
+    /**
      * Asserts that a given module exists and is enabled.
      *
-     * @Given /^the "(?P<module>[^"]*)" module is installed$/
+     * @Given the :module module is installed
      */
+    /*
     public function assertModuleExists($module)
     {
         if (module_exists($module)) {
@@ -36,12 +45,6 @@ class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext
         $message = sprintf('Module "%s" is not installed.', $module);
         throw new \Exception($message);
     }
-
-    /**
-     * @When /^I visit the login page$/
-     */
-    public function iAmOnThe()
-    {
-        $this->getSession()->visit('user');
-    }
+    */
+    
 }
