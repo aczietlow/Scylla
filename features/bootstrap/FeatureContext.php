@@ -37,4 +37,11 @@ class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext
         throw new \Exception($message);
     }
 
+    /**
+     * @When /^I visit the login page$/
+     */
+    public function iAmOnThe()
+    {
+        $this->getSession()->visit('user');
+    }
 }

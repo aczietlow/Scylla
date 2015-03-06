@@ -6,9 +6,8 @@ Feature: Homepage.
 
   Scenario: I can log in.
     Given I am an anonymous user
-    And I am on the homepage
-    When I am on "user"
+    When I visit the login page
     And I fill in "name" with "admin"
     And I fill in "pass" with "admin"
     And press "Log in"
-    Then I should see the link "Log Out"
+    Then I should see the link "Log out"
