@@ -1,7 +1,7 @@
 {
   "name": "zietlow/scylla",
   "license": "GPLv2",
-  "description": "Playground for better understanding the 'dragons' hiding under the water and how to test for them.",
+  "description": "Playground for better understanding the 'dargons' hiding under the water and how to test for them.",
 
   "minimum-stability": "dev",
   "require": {

@@ -23,9 +23,11 @@
 ------------------
 
 1. From inside the project root `vagrant ssh`
-2. Navigate to `/var/www/sites/trpdc.dev`
+2. Navigate to `/var/www/sites/scylla.dev
 
 There is your project. Run `drush` commands from the `www` directory just like you would without a VB.
+
+3. run build/install.sh from the project root to install Drupal.
 
 ##Troubleshooting
 
