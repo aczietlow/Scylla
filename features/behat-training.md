@@ -2,6 +2,8 @@
 
 Behavior Driven Development - an â€œoutside-inâ€ methodology. It starts at the outside by identifying business outcomes, and then drills down into the feature set that will achieve those outcomes. - Dan North*
 
+Their docs are great! http://docs.behat.org/en/v2.5/
+
 ## Benefits
 
 * Better code quality
@@ -44,7 +46,7 @@ Firefox
 * Drivers
   * Emulators - Glorified http clients; can send http requests and parse the response
      * Goutte
-     * Browser Sync
+     * Browser Kit
   * Controllers - controls real browser (like firefox)
      * Selenium2
      * PhantomJS
@@ -59,7 +61,7 @@ Firefox
 Emulators - Glorified http clients; can send http requests and parse the response
 
 * Fast
-* Canâ€™t run javascript, or AJAX support
+* Can't run javascript, or AJAX support
 
 Controllers - controls real browser (like firefox)
 
@@ -165,6 +167,14 @@ Behat will generate a code scaffolding to use for our test. which we can further
         $this->getSession()->visit('user');
       }
       
+This is a good place to highlight how awesome mink is for us. Here's just some examples of how to navigate to pages with drivers:
+
+    // Selenium2 WebDriver
+    $driver->get('http://google.com');
+    $driver->navigate()->to('http://google.com');
+   
+    // Goutte
+    $crawler = $client->request('GET', 'http://google.com');
 
 Some common usages of the Mink API
 
