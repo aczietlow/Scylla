@@ -46,5 +46,5 @@ class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext
         throw new \Exception($message);
     }
     */
-    
+
 }
