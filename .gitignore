@@ -1,7 +1,7 @@
 # Ignore composer downloads
 vendor
 bin/*
-www/*
+
 
 !bin/drupal_init
 !bin/cnf
