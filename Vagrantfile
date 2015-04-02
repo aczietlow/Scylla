@@ -19,6 +19,8 @@ Vagrant.configure("2") do |config|
   set -ex
   /opt/phantomjs --webdriver=8643 &> /dev/null &
   su vagrant -c 'cd #{path} && composer install;
-  cd #{path} && build/install.sh;'
+  cd #{path} && build/install.sh;
+  echo "xdebug.max_nesting_level=500" >> /etc/php5/apache2/php.ini;
+  sudo service apache2 restart;'
 SCRIPT
 end
