@@ -6,7 +6,7 @@ Feature: Homepage.
 
   Scenario: I can log in.
     Given I am an anonymous user
-    When I visit the login page
+    When I am at "user/login"
     And I fill in "name" with "admin"
     And I fill in "pass" with "admin"
     And press "Log in"
