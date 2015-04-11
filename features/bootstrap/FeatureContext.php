@@ -36,7 +36,6 @@ class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext
      *
      * @Given the :module module is installed
      */
-    /*
     public function assertModuleExists($module)
     {
         if (module_exists($module)) {
@@ -45,6 +44,5 @@ class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext
         $message = sprintf('Module "%s" is not installed.', $module);
         throw new \Exception($message);
     }
-    */
 
 }
