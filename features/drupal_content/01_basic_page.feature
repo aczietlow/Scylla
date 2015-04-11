@@ -13,7 +13,7 @@ Feature: Basic page nodes
 
   Scenario: Newly created page nodes appear on the homepage.
     Given "page" content:
-      | title |
-      | Page Content |
+      | title | body | author |
+      | Page Content | This is my body field | admin |
     When I go to the homepage
     Then I should see "Page Content"
