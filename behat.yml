@@ -7,16 +7,6 @@ default:
         - Drupal\DrupalExtension\Context\MinkContext
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\DrushContext
-    content:
-      path: %paths.base%/features/drupal_content
-      contexts:
-        - ContentContext
-        - Drupal\DrupalExtension\Context\DrupalContext
-        - Drupal\DrupalExtension\Context\MinkContext
-        - Drupal\DrupalExtension\Context\MessageContext
-        - Drupal\DrupalExtension\Context\DrushContext
-      filters:
-        tags: @content
   extensions:
     Behat\MinkExtension:
       goutte: ~

@@ -1,4 +1,4 @@
-@api @content
+@api
 Feature: Basic page nodes
   As a admin user
   I want to have the ability to create basic page nodes

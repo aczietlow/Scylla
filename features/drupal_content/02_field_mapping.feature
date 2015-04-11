@@ -1,4 +1,4 @@
-@api @content
+@api
 Feature: Creating content
   As a developer writing Behat tests
   I want to be able to have step definitions that allow me to create content
