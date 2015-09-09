@@ -18,11 +18,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, inline: <<SCRIPT
   set -ex
   /opt/phantomjs --webdriver=8643 &> /dev/null &
-  #su vagrant -c 'cd #{path} && composer install;
-  #cd #{path} && build/install.sh;'
-
-  #   WARNING! Total hack!
-  sudo echo "xdebug.max_nesting_level=500" >> /etc/php5/apache2/conf.d/20-xdebug.ini;
-  sudo service apache2 restart;
+  su vagrant -c 'cd #{path} && composer install;
+  cd #{path} && build/install.sh;'
 SCRIPT
 end
