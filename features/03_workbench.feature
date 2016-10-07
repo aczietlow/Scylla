@@ -1,5 +1,5 @@
 @api
-Feature: Migrations
+Feature: Workflow
   As an editor of Scylla
   I want the workbench module enabled
   So that I can create custom editing work flows
