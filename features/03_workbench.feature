@@ -1,4 +1,4 @@
-@api @javascript
+@api @javascript @demo
 Feature: Workflow
   As an editor of Scylla
   I want the workbench module enabled

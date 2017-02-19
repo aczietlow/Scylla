@@ -1,4 +1,4 @@
-@api
+@api @demo
 Feature: Homepage.
   As a user of Scylla,
   I want to be able to log into the site

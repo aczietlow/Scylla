@@ -1,4 +1,4 @@
-@api
+@api @demo
 Feature: Homepage.
   As a user of Scylla,
   I want to see Scylla's name on the homepage,
